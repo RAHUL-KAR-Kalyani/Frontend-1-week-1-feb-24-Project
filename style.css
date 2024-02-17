@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{    
+    --navbar-bg: #7a6d5b;
+    --text: #865439;
+    --navbar-text: #E0C097;
+    --navbar-text-hover: #2D2424;
+    --about-bg: #E3CAA5;
+    --about-text: #2D2424;
+    --menu-bg: #a59172;
+    --booking-bg: #6F4E37;
+    --booking-text: #442E26;
+    --review-bg: #6F4E37;
+    --footer-text: #722F37;
+    --footer-bg: #2D2424;
+    --extra-bg: #755e5e;
+    --extra-text: #784848;
+}
+
+@font-face {
+    font-family: Mansalva_Regular;
+    src: url('./Mansalva_Regular.ttf');
+}
+
+.navbar{
+    background-color:  var(--navbar-bg);    
+    padding: 10pt;
+    text-align: center;    
+    position: sticky;
+    top: 0;
+    /* z-index: 1020; */
+    width: 100%;   
+    
+}
+.books,.registration{
+    padding: 50px 25px;
+}
+
+.registration h1{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    /* margin-left: auto !important */
+}
+
+.ms-auto {
+    margin-left: auto !important
+}
+
+.navbar>a{
+    text-decoration: none;
+    /* font-family: Mansalva_Regular; */
+    color: var(--navbar-text);
+    font-size: x-large;
+    letter-spacing: normal;
+    margin: 0 20px 0 0;
+}
+.navbar>a:hover{
+    text-decoration: underline;
+    color: var(--navbar-text-hover);
+}
+.books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    text-align: center;
+    width: 100%;
+}
+.books table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.books th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.books th {
+    background-color: #f2f2f2;
+}
+
+/* nested table style */
+.books .nested-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.books .nested-table th, .nested-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.books .nested-table th {
+    background-color: #f5f5f5;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--booking-text);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--about-text);
+}
